@@ -13,6 +13,10 @@ class TitanicController:
         m.context = self._context
         m.fname = 'train.csv'
         t1 = m.new_dfame()
-        print('--------------- train head & column ---------------')
-        print(t1.head())
-        print(t1.columns)
+
+        m.fname = 'test.csv'
+        t2 = m.new_dfame()
+
+        train = m.hook_process(t1, t2)
+
+
