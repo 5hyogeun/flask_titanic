@@ -5,7 +5,8 @@ if __name__ == '__main__':
         print('0. EXIT')
         print('1. LEARNING MACHINE')
         print('2. VIEW : plot_survived_dead')
-        print('2. TEST ACCURACY')
+        print('3. TEST ACCURACY')
+        print('4. SUBMIT')
         return input('CHOOSE ONE \n')
     while 1:
         menu = print_menu()
@@ -26,3 +27,13 @@ if __name__ == '__main__':
             # view.plot_survived_dead(t)
             # view.plot_sex(t)
             view.bar_chart(t, 'Pclass')
+            break
+        elif menu == '3':
+            ctrl = TitanicController()
+            t = ctrl.create_train()
+            ctrl.test_all()
+
+        elif menu == '4':
+            ctrl = TitanicController()
+            t = ctrl.create_train()
+            ctrl.submit()
