@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8cd0eb6b-59a1-4e2e-b7a9-a2e3813b56ce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/titanic/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/controller.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/titanic/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/titanic/model.py" afterDir="false" />
     </list>
@@ -27,10 +26,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../tensorflow190824_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/titanic" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ezen\PycharmProjects\tensorflow190824\titanic" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\ezen\PycharmProjects\tensorflow190824\titanic\data" />
     </key>

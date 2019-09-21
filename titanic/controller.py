@@ -5,14 +5,16 @@ from sklearn.svm import SVC
 class TitanicController:
     def __init__(self):
         self._m = TitanicModel()
-        self._context = './data/'
+        print('***********************************')
+        print(self._m.test_id)
+        ##self._context = './data/'
         self._train = self.create_train()
 
     def create_train(self)->object:
         print('0 >>>> ')
         m = self._m
-        print('1 >>>> ' + self._context)
-        m.context = self._context
+        # print('1 >>>> ' + self._context)
+        m.context = './data/'
         print('2 >>>> '+m.context)
         m.fname = 'train.csv'
         t1 = m.new_dfame()
@@ -44,13 +46,18 @@ class TitanicController:
         m = self._m
         model = self.create_model()
         dummy = self.create_dummy()
-        test = m.test
-        test_id = m.test_id
+        test = m._test
+        test_id = m._test_id     #######################  --주의 --  #######################
 
         clf = SVC()
         clf.fit(model, dummy)
+        print('---- 1. Model Info ----')
+        print(model.info)
+        print('---- 2. ----')
         prediction = clf.predict(test)
+        print('---- 3. ----')
         submission = pd.DataFrame(
             {'PassengerId':test_id, 'Survived': prediction})
         print('submission.head()')
-        submission.to_csv('submission.csv', index=False)
+        print(submission.head())
+        submission.to_csv('./data/submission.csv', index=False)

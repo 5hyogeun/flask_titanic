@@ -61,10 +61,15 @@ class TitanicModel:
     def test(self, test): self._test = test
 
     @property
-    def test_id(self) -> object: return self._test_id
+    def test_id(self) -> object:
+        print('::::::::::::::::: test_id ::::::::::::::::::')
+        print(self._test_id)
+        return self._test_id
 
     @context.setter
-    def test_id(self, test_id): self._test_id = test_id
+    def test_id(self, test_id):
+
+        self._test_id = test_id
 
     def new_file(self) -> str: return self._context + self._fname
 
